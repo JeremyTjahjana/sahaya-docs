@@ -47,6 +47,7 @@ Gunakan catatan sesi uji tanpa histori lokasi atau identitas. Angka hasil belum 
 
 ## Log penting — 0.4.8 Google
 
+- **Distribusi:** [0.4.8 Google tayang di Vercel](https://sahaya-test-download.vercel.app/) sejak 23 November 2026 WIB. Unduhan tanpa login identik dengan APK QA; 0.4.7 masih tersedia di arsip.
 - **Source:** `sahaya-android/main` (`bee8aa0`). APK uji `id.sahaya.app.test`, `versionCode=13`, Android 8.0+. SHA-256 `f61e22ae6893e9068cadbc9586754b0b94104e38d66d77c38f89668205a3781f`.
 - **Build:** Google Maps/Places dan Auth aktif. Firestore komunitas tidak aktif (`SAHAYA_PILOT_ONLINE=false`). Konfigurasi klien Firebase lokal tidak masuk Git; APK tidak memakai pengaturan HTTP emulator.
 - **Uji:** 65 tes unit lulus; runner APK target `OK (24 tests)`, dengan dua tes khusus varian lain tidak dijalankan. Lint 0 error (64 warning). Uji integrasi terpisah dengan Firebase Auth Emulator lulus: daftar email, ubah nama, permintaan verifikasi dan reset, keluar, masuk kembali. Di APK target, layar login dan akses dari Pengaturan terlihat, dan Firebase live menolak kredensial sintetis dengan pesan yang sesuai.
