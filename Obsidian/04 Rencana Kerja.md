@@ -2,9 +2,9 @@
 
 [Beranda](00%20SAHAYA.md) · [Produk dan MVP](01%20Produk%20dan%20MVP.md) · [Desain UI](02%20Alur%20dan%20UX.md) · [Keperluan lomba](05%20Keperluan%20Lomba.md)
 
-## Target 0.4.7
+## Prioritas setelah 0.4.8
 
-**0.4.7 Google: lulus pengujian emulator.** Varian publik mendukung kontribusi lokal; modul online dibangun terpisah dan belum diaktifkan pada varian publik.
+**0.4.8 Google:** Auth dan akun opsional; verifikasi komunitas dibangun terpisah dan belum aktif pada varian publik.
 
 1. **UI dan draf lokal (F03, F04, F06).** Kedua pintu masuk tambah tempat memakai satu form, satu model draf dan satu aturan snapshot. Tambah variasi notifikasi panas/hujan/rehat dan samakan latar header Kinerja dengan halaman. Uji sebelum menambah ketergantungan login.
 2. **Pilot tertutup (F06, F08).** Verifikasi varian Google Auth, daftarkan akun pilot melalui admin, lalu uji akses privat dan transaksi publikasi dengan enam UID uji (satu pengusul, lima pengonfirmasi). Jangan aktifkan pengiriman ke komunitas sebelum aturan akses, idempotensi, dan data yang boleh tampil publik lulus uji.
@@ -44,6 +44,13 @@ Gunakan catatan sesi uji tanpa histori lokasi atau identitas. Angka hasil belum 
 | Kondisi lokal bisa dipercaya | Catat waktu sumber dan waktu ambil untuk tiap feed, hasil pembaruan tanpa interaksi, serta tampilan saat gagal. Lanjut jika kedua feed otomatis dan data usang ditandai; catat BMKG secara terpisah sebagai cakupan cuaca. |
 | Kontribusi berguna tanpa membuka data pribadi | Catat jumlah usaha yang sukses/gagal, suara sah per kandidat, waktu sampai publik, dan hasil uji akses. Tahan pilot komunitas jika peserta aktif kurang dari enam, kandidat terlihat sebelum lima suara berbeda, atau ada data privat yang bocor. |
 | Biaya pilot terkendali | Catat jumlah upaya API, layanan yang digunakan dan penggunaan/biaya proyek yang bisa diperiksa. Jangan perluas pilot sebelum estimasi masuk Rp100.000/bulan dan setiap perubahan berbayar disetujui. |
+
+## Log penting — 0.4.8 Google
+
+- **Source:** `sahaya-android/main` (`bee8aa0`). APK uji `id.sahaya.app.test`, `versionCode=13`, Android 8.0+. SHA-256 `f61e22ae6893e9068cadbc9586754b0b94104e38d66d77c38f89668205a3781f`.
+- **Build:** Google Maps/Places dan Auth aktif. Firestore komunitas tidak aktif (`SAHAYA_PILOT_ONLINE=false`). Konfigurasi klien Firebase lokal tidak masuk Git; APK tidak memakai pengaturan HTTP emulator.
+- **Uji:** 65 tes unit lulus; runner APK target `OK (24 tests)`, dengan dua tes khusus varian lain tidak dijalankan. Lint 0 error (64 warning). Uji integrasi terpisah dengan Firebase Auth Emulator lulus: daftar email, ubah nama, permintaan verifikasi dan reset, keluar, masuk kembali. Di APK target, layar login dan akses dari Pengaturan terlihat, dan Firebase live menolak kredensial sintetis dengan pesan yang sesuai.
+- **Belum diuji:** login Google dengan akun nyata, email verifikasi/reset sampai ke kotak masuk nyata, dan alur lengkap di HP fisik. Login tidak memberi hak verifikasi driver dan tidak menyinkronkan rute atau draf.
 
 ## Log penting — 0.4.7 Google
 

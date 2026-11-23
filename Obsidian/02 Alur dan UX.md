@@ -6,6 +6,8 @@
 
 ## Masuk dan lima tab
 
+**0.4.8:** instalasi baru menawarkan layar masuk dengan logo helm, latar hijau muda, tombol Google, form email, daftar, lupa sandi dan **Lanjut tanpa akun**. Untuk instalasi lama, buka **Pengaturan → Akun → Masuk atau daftar**. Setelah masuk, **Atur akun** menyediakan nama akun, verifikasi email dan reset sandi untuk akun email, serta **Keluar**. Nama akun berbeda dari nama panggilan lokal driver.
+
 Splash dilanjutkan personalisasi satu pertanyaan per layar: profil, hari/jam kerja, area, dan pilihan pengingat. Langkah terakhir memisahkan izin lokasi, notifikasi, dan aktivitas fisik; tiap izin punya alasan singkat dan aksi untuk membuka prompt Android. Driver bisa melewati langkah itu dan mengulangnya dari **Pengaturan → Izin & Privasi**. Minta lokasi saat aplikasi dipakai lebih dulu; akses latar hanya ditawarkan terpisah untuk mulai otomatis. Perbarui status saat kembali dari Pengaturan. Jangan gabungkan izin dengan persetujuan simpan rute atau pencarian Places.
 
 | Tab | Susunan dan perilaku |

@@ -10,7 +10,7 @@ SAHAYA adalah aplikasi Android untuk driver ojek online di Kota Bogor. Fokusnya 
 
 ## Posisi saat ini
 
-**0.4.7 Google** tersedia di Vercel dan sudah lulus verifikasi emulator untuk kontribusi lokal, variasi pengingat, dan header Kinerja. [Halaman unduhan](https://sahaya-test-download.vercel.app/). Integrasi komunitas disiapkan pada varian privat; APK publik hanya menyimpan draf di HP. Perjalanan penuh di HP fisik, login Google nyata, dan pembaruan otomatis berita serta BBM masih perlu dibuktikan. Lihat [log 0.4.7](04%20Rencana%20Kerja.md#log-penting--047-google) dan [ukuran keberhasilan pilot](04%20Rencana%20Kerja.md#ukuran-keberhasilan-pilot).
+**0.4.8 Google** menambahkan login opsional, pendaftaran dan reset sandi, serta menu Atur akun dan Keluar. [Halaman unduhan](https://sahaya-test-download.vercel.app/). Firestore komunitas masih nonaktif; riwayat kerja dan draf tetap di HP. Login Google nyata dan pengiriman email ke kotak masuk belum diverifikasi.
 
 - [Produk dan MVP](01%20Produk%20dan%20MVP.md) — sasaran, fitur F01–F08, sumber data, dan batas privasi.
 - [Alur dan UX](02%20Alur%20dan%20UX.md) — lima tab, pengingat, dan alur tambah tempat.
