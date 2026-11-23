@@ -2,7 +2,7 @@
 
 Aplikasi Android untuk membantu driver ojol di Kota Bogor mencatat waktu kerja, menyiapkan shift, dan menemukan tempat rehat. Fokus SDG 3: kesehatan dan kesejahteraan.
 
-**Build uji: 0.4.4 Google** · [Unduh APK](https://sahaya-test-download.vercel.app/) · diverifikasi 23 November 2026. **Source** dan APK adalah checkpoint berbeda: commit `8f3da36` memuat pekerjaan lanjutan yang belum ada di APK publik.
+**Build uji: 0.4.4 Google** · [Unduh APK](https://sahaya-test-download.vercel.app/) · diverifikasi 23 November 2026. **0.4.5 Google** sudah diuji di emulator dan source sudah ada di `main` (`4a7fd93`). APK belum dipublikasikan. Lihat hasil tes dan status distribusi di Rencana & Iterasi.
 
 - [Fitur dan API](01%20Produk%20dan%20MVP.md) — yang berjalan dan yang belum.
 - [Desain UI](02%20Alur%20dan%20UX.md) — satu acuan aktif.

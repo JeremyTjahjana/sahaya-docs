@@ -10,6 +10,8 @@
 | Kondisi | Tampilkan `Paledang, Bogor Tengah · 16:29` sebagai contoh format, bukan jam tetap. Tampilkan sumber yang diperlukan tanpa kalimat “diambil …”. |
 | Kinerja | Satu switch pencatatan. Setelah pengguna setuju dan izin tersedia, mulai otomatis sesuai batas Android; tetap sediakan tanggal, riwayat, dan hapus rute. |
 | Maps | Fokus dan zoom otomatis ke posisi driver saat GPS tersedia. Hapus tombol “Lokasi saya” dan “Kota Bogor”; minta izin hanya jika diperlukan. |
-| Pengaturan | Profil, jadwal, pengingat, izin dan privasi. |
+| Pengaturan | Profil, jadwal, pengingat, izin dan privasi; build debug menambah satu switch Mode Dev. |
+
+**Tes di HP:** aktifkan **Pengaturan → Mode Dev**, lalu buka **Kinerja**. Gunakan joystick dan **Tes notifikasi** → **Ingat minum**, **Bawa jas hujan**, atau **Istirahat**. Yang terakhir membuka panel bawah berisi contoh tempat rehat. Matikan Mode Dev untuk tes GPS, Maps, dan Places nyata. Dev tidak menyimpan rute asli atau memakai kuota Places.
 
 Hilangkan teks akurasi GPS, cooldown/kuota dan instruksi berulang dari layar utama. Pertahankan persetujuan yang diperlukan, status singkat saat gagal, dan atribusi wajib peta/foto/data.
