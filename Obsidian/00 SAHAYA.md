@@ -1,10 +1,18 @@
 # SAHAYA
 
-Aplikasi Android untuk membantu driver ojol di Kota Bogor mencatat waktu kerja, menyiapkan shift, dan menemukan tempat rehat. Fokus SDG 3: kesehatan dan kesejahteraan.
+SAHAYA adalah aplikasi Android untuk driver ojek online di Kota Bogor. Fokusnya SDG 3 (Kehidupan Sehat dan Sejahtera): membantu driver menyiapkan shift, memahami waktu kerja yang tercatat, dan menemukan tempat rehat yang sesuai kebutuhan dan anggaran. Driver tetap menentukan kapan aman untuk berhenti dan kapan ingin berbagi data.
 
-**Build uji: 0.4.6 Google** · [Unduh APK](https://sahaya-test-download.vercel.app/) · Vercel diverifikasi 23 November 2026. Source build: `sahaya-android/main` (`fa3a15d`). Lihat [Rencana & Iterasi](04%20Rencana%20Kerja.md).
+## Tujuan pilot
 
-- [Fitur dan API](01%20Produk%20dan%20MVP.md) — yang berjalan dan yang belum.
-- [Desain UI](02%20Alur%20dan%20UX.md) — satu acuan aktif.
-- [Rencana dan iterasi](04%20Rencana%20Kerja.md) — prioritas dan alur push.
-- [Keperluan lomba](05%20Keperluan%20Lomba.md) — checklist singkat.
+- **Sebelum narik:** driver bisa melihat kondisi sekitar dan menerima pengingat persiapan shift sesuai jadwal.
+- **Saat bekerja:** driver bisa meninjau catatan kerjanya sendiri dan mendapat saran rehat tanpa harus berinteraksi saat berkendara.
+- **Saat berhenti:** driver bisa membandingkan tempat rehat dari peta di aplikasi. Usulan komunitas baru terlihat publik setelah dikonfirmasi oleh peserta pilot lain.
+
+## Posisi saat ini
+
+**0.4.7 Google** sudah lulus verifikasi emulator untuk kontribusi lokal, variasi pengingat, dan header Kinerja. [Halaman unduhan](https://sahaya-test-download.vercel.app/). Integrasi komunitas disiapkan pada varian privat; APK publik hanya menyimpan draf di HP. Perjalanan penuh di HP fisik, login Google nyata, dan pembaruan otomatis berita serta BBM masih perlu dibuktikan. Lihat [log 0.4.7](04%20Rencana%20Kerja.md#log-penting--047-google) dan [ukuran keberhasilan pilot](04%20Rencana%20Kerja.md#ukuran-keberhasilan-pilot).
+
+- [Produk dan MVP](01%20Produk%20dan%20MVP.md) — sasaran, fitur F01–F08, sumber data, dan batas privasi.
+- [Alur dan UX](02%20Alur%20dan%20UX.md) — lima tab, pengingat, dan alur tambah tempat.
+- [Rencana dan iterasi](04%20Rencana%20Kerja.md) — urutan pekerjaan, kriteria penerimaan, dan runbook Firebase.
+- [Keperluan lomba](05%20Keperluan%20Lomba.md) — checklist dan guidebook lokal.
