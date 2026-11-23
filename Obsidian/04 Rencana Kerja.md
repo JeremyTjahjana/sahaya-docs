@@ -47,6 +47,7 @@ Gunakan catatan sesi uji tanpa histori lokasi atau identitas. Angka hasil belum 
 
 ## Log penting — 0.4.7 Google
 
+- **Distribusi:** [0.4.7 Google tayang di Vercel](https://sahaya-test-download.vercel.app/) sejak 23 November 2026. Unduhan anonim identik dengan APK QA; 0.4.6 masih tersedia di arsip.
 - **Source:** `sahaya-android/main` (`a44627b`). Varian Google publik: `id.sahaya.app.test`, `versionCode=12`, Android 8.0+, Firebase pilot nonaktif. SHA-256 `c58099263f34a82bf656dee4c929fddd33d38e261052d936488bb7e983e01357`.
 - **Bukti:** 65 tes unit, runner Android `OK (23 tests)` dengan satu tes khusus tanpa key dilewati, lint 0 error (54 warning di varian publik). Google Maps merender jalan pada pemilih pin; berhasil menyimpan draf tanpa izin GPS, harga atau login. Header Kinerja cocok dengan latar halaman. Tes notifikasi simulasi memeriksa aksi Bukan dan snapshot titik setelah bergerak.
 - **Pilot:** 18 tes rules emulator lulus. Belum ada penerbitan aturan ke `sahaya-pilot`, login Google nyata, atau tes konfirmasi lintas HP. Foto dan histori tetap di HP.
