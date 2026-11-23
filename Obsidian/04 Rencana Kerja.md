@@ -8,6 +8,13 @@
 2. **Polusi dan tes:** gunakan PM2.5 Open-Meteo/CAMS regional untuk uji nonkomersial, bukan Google Air Quality atau estimasi per jalan. Cuaca tetap BMKG; Mode Dev menampilkan joystick di Kinerja dan tiga tombol tes: minum, jas hujan, dan rehat dengan saran tempat.
 3. **Uji pilot:** satu perjalanan penuh di HP, dua pengingat, semua kategori/urutan, serta pembaruan otomatis BBM dan berita dengan sumber dan status data lama. Setelah itu, validasi kontribusi komunitas dengan lima driver pilot terverifikasi.
 
+## Log penting — 0.4.6 Google
+
+- **Status:** build QA dan source `sahaya-android/main` (`fa3a15d`); Vercel masih 0.4.5. Paket `id.sahaya.app.test`, `versionCode=11`. APK SHA-256 `52979bad70417247b4b0e55cbb496b0bf06a604226aa7e787b9b3f1020f4a9a5`.
+- **Audit foto:** ketika visibilitas menjadi key efek, scroll dapat membatalkan permintaan yang telanjur ditandai sudah dicoba. Kini hanya mulai saat thumbnail terlihat; scroll biasa tidak membatalkan unduhan yang berjalan. Maksimal dua upaya per efek, tetap tunduk kuota. Foto asli dan kredit tampak di emulator; kartu tanpa foto tampil dengan ilustrasi generik.
+- **Kondisi:** tidak mengulang jam/area pada kartu cuaca. Angka PM2.5 dibulatkan untuk tampilan; band dihitung dari nilai asli: ≤15,5 / >15,5–55,4 / >55,4 µg/m³. Ini band internal untuk estimasi per jam, bukan ISPU resmi. Panduan menjelaskan pengurangan paparan dan respirator yang pas; atribusi [Open-Meteo/CAMS](https://open-meteo.com/en/docs/air-quality-api) tetap ada di panduan.
+- **Pengujian:** 62 tes unit, runner Google `OK (21 tests)` dengan satu kasus keyless dilewati, lint 0 error (47 warning). Emulator memverifikasi refresh Places setelah tarik-turun dan fix segar, serta tombol khusus BBM. PM2.5 dan harga tampil; prakiraan BMKG di app masih belum tersedia pada sesi ini, meski endpoint menjawab HTTP 200 dari host. Belum dites di HP fisik.
+
 ## Log penting — 0.4.5 Google
 
 - **Status:** dibangun lokal dan diuji di emulator Google APIs Android 28. `versionCode=10`, `id.sahaya.app.test`, Android 8.0+, tanda tangan debug sama dengan APK sebelumnya. Diterbitkan di Vercel pada 23 November 2026. Unduhan tanpa login lolos verifikasi byte-for-byte; 0.4.4 Google masih tersedia di arsip. Source diverifikasi di `sahaya-android/main` (`4a7fd93`).
